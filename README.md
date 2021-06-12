@@ -5,7 +5,7 @@ This approach uses statically linked qt, no `.dll`s are required
 1) Compile qt and additional libraries with [mxe](https://github.com/mxe/mxe).\
 You can use prepared docker image:
 ```
-docker build -t cross_compile .
+docker build -t cross_compile -f Dockerfile.<version> .
 ```
 If `docker build` reports errors when compiling packages, manually add problematic ones in dockerfile.
 
